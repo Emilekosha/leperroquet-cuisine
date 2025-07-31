@@ -7,7 +7,7 @@ import "./index.css";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename="/leperroquet-cuisine">
       <Routes>
         <Route path="/" element={<App />} />
         <Route path="/publicite" element={<Publicite />} />
