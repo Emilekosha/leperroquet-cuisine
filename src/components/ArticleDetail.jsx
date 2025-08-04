@@ -13,6 +13,7 @@ export default function ArticleDetail() {
         consommation équilibré, varié, et respectueux des besoins réels du
         corps.
       </p>
+      
       <div className="text-gray-700 leading-relaxed space-y-4">
         <p className="mb-4 text-left sm:text-justify sm:text-lg leading-relaxed ">
           L’Organisation Mondiale de la Santé recommande notamment :
