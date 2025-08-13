@@ -1,6 +1,6 @@
 import Layout from "../components/Layout";
 import { Link } from "react-router-dom";
-import pub1 from "../assets/publi.jpg";
+import pub1 from "../assets/pub1.png";
 import pub4 from "../assets/pub4.jpg";
 import pub3 from "../assets/pub3.jpg";
 // import pub5 from "../assets/pub5.jpg";
@@ -63,23 +63,14 @@ export default function Publicite() {
             <div className="flex flex-col lg:flex-row gap-10">
               {/* Colonne 1 */}
               <div className="flex-1 flex flex-col space-y-6">
-                <h3 className="text-xl sm:text-2xl font-bold text-blue-600">
+                {/* <h3 className="text-xl sm:text-2xl font-bold text-blue-600">
                   🥗 Mieux manger au quotidien : quand le sain devient simple
                   (et délicieux)
                 </h3>
 
                 <p className="text-sm font-medium text-gray-600">
                   Article sponsorisé par Terre & Saveurs
-                </p>
-
-                {/* Image encadrée */}
-                <div className="rounded-xl overflow-hidden shadow-lg">
-                  <img
-                    src={pub1}
-                    alt="Image campagne 1"
-                    className="w-full h-full object-cover"
-                  />
-                </div>
+                </p> */}
 
                 <p className="mb-4 text-left sm:text-justify text-sm sm:text-lg leading-relaxed">
                   De plus en plus de Français souhaitent adopter une
@@ -90,10 +81,14 @@ export default function Publicite() {
                   qu’intervient Terre & Saveurs, une jeune marque française qui
                   veut réconcilier santé, gourmandise et praticité.
                 </p>
-              </div>
 
-              {/* Colonne 2 */}
-              <div className="flex-1 flex flex-col space-y-6">
+                <div className="rounded-xl overflow-hidden shadow-lg">
+                  <img
+                    src={pub4}
+                    alt="Image campagne 1"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
                 <h3 className="text-xl sm:text-2xl font-bold text-blue-600">
                   Une alternative saine et complète, prête en quelques minutes
                 </h3>
@@ -103,12 +98,15 @@ export default function Publicite() {
                   choix au marché ou au supermarché. Privilégier les produits
                   frais, locaux et de saison présente de multiples avantages :
                 </p>
+              </div>
 
-                <div className="rounded-xl overflow-hidden shadow-lg">
+              {/* Colonne 2 */}
+              <div className="flex-1 flex flex-col space-y-6">
+                <div className="rounded-xl overflow-hidden shadow-lg w-full">
                   <img
-                    src={pub4}
+                    src={pub1}
                     alt="Mieux manger - Terre & Saveurs"
-                    className="w-full h-full object-cover"
+                    className="w-full h-auto lg:h-[500px] object-cover"
                   />
                 </div>
 
@@ -116,7 +114,7 @@ export default function Publicite() {
                   Prenons leur bol signature, par exemple :
                 </h4>
 
-                <ul className="list-disc list-inside pl-4 text-gray-700 text-sm sm:text-base leading-relaxed">
+                <ul className="list-disc list-inside pl-4 text-gray-700 text-sm sm:text-lg leading-relaxed">
                   <li>
                     <strong>Quinoa bio tricolore</strong>, riche en fibres et en
                     protéines végétales
@@ -159,8 +157,6 @@ export default function Publicite() {
                   Manger mieux sans se compliquer la vie
                 </h3>
 
-               
-
                 <div className="text-gray-700 text-sm sm:text-base leading-relaxed space-y-4 text-justify">
                   <p className="mb-4 text-left sm:text-justify text-sm sm:text-lg leading-relaxed">
                     Chez Terre & Saveurs, le parti pris est clair : il est temps
@@ -170,11 +166,11 @@ export default function Publicite() {
                     réchauffe ou se dégustent froid.
                   </p>
 
-                   <img
-                  src={pub3}
-                  alt="ÉclatPur campagne"
-                  className="w-full h-auto rounded-xl shadow-md object-cover"
-                />
+                  <img
+                    src={pub3}
+                    alt="ÉclatPur campagne"
+                    className="w-full h-auto rounded-xl shadow-md object-cover"
+                  />
 
                   <p className="mb-4 text-left sm:text-justify text-sm sm:text-lg leading-relaxed">
                     Cela permet de mieux manger sans tout réorganiser, que ce
@@ -285,8 +281,9 @@ export default function Publicite() {
                     rel="noopener noreferrer"
                     className="underline hover:text-purple-900 transition"
                   >
-                    Plus d’infos sur terreetsaveurs.fr
+                   
                   </a>
+                   Plus d’infos sur terreetsaveurs.fr
                 </p>
               </div>
             </div>
